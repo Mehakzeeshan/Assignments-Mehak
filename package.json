@@ -1,6 +1,6 @@
 {
   "name": "mnyz3-simple-calculator",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "A simple calculator with Typescript, Node.js and Inquirer",
   "main": "index.js",
   "type": "module",

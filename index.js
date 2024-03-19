@@ -1,4 +1,5 @@
-import inquirer from "inquirer";
+#! /usr/bin/env node
+import inquirer from "inquirer"; //656.5k (gzipped: 266.6k)
 const answer = await inquirer.prompt([
     { message: "Enter first number", type: "number", name: "firstNumber" },
     { message: "Enter second number", type: "number", name: "secondNumber" },
@@ -19,8 +20,11 @@ else if (answer.operator === "Subtraction") {
 else if (answer.operator === "Multiplication") {
     console.log(answer.firstNumber * answer.secondNumber);
 }
-if (answer.operator === "Division") {
+else if (answer.operator === "Division") {
     console.log(answer.firstNumber / answer.secondNumber);
 }
+else {
+    console.log("Please select a valid operator");
+}
 ;
-console.log(answer);
+console.log("THE END");
